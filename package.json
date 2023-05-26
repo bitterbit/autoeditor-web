@@ -10,6 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@buf/galtashma_editor.bufbuild_connect-query": "^0.2.3-20230526160721-ec6bc75c6337.1",
+    "@buf/galtashma_editor.bufbuild_connect-web": "^0.8.6-20230526160721-ec6bc75c6337.1",
+    "@buf/galtashma_editor.bufbuild_es": "^1.2.0-20230526160721-ec6bc75c6337.1",
+    "@buf/galtashma_editor.protocolbuffers_js": "^3.21.2-20230526160721-ec6bc75c6337.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
