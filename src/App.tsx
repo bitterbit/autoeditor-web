@@ -1,4 +1,4 @@
-import { QueryClient, QueryClientProvider} from '@tanstack/react-query';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Layout } from './Layout';
 import { createConnectTransport } from "@bufbuild/connect-web";
 import { TransportProvider } from "@bufbuild/connect-query";

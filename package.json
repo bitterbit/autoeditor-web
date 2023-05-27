@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@buf/galtashma_editor.bufbuild_connect-query": "^0.2.3-20230527102030-ef46f8b3808d.1",
+    "@buf/galtashma_editor.bufbuild_connect-query": "^0.2.3-20230527110517-6aec07bbe8ac.1",
     "@bufbuild/connect-web": "^0.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
