@@ -47,7 +47,7 @@ export const Layout = () => {
                         paths={tarckedFilesResponse?.files || []}
                         onClick={(path: string) => { selectPath(path) }} />
                 </div>
-                <div className='basis-1/2'>
+                <div className='basis-1/2 max-w-[50%]'>
                     <Code content={fileContent} path={codeContext.path} onRangeChange={(range: Range) => {
                         setCodeContext((prev) => {
                             return {
@@ -62,14 +62,6 @@ export const Layout = () => {
                 <div className='flex-grow bg-gray-100 p-4'>
                     <Chat codeContext={codeContext} />
                 </div>
-            </div>
-            <div>
-                <pre>
-                    <code>
-                        Loading: {isLoading}<br />
-                        Error: {error?.message || ''}<br />
-                    </code>
-                </pre>
             </div>
         </>
     )
