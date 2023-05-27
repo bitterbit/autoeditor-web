@@ -1,5 +1,4 @@
 import { getFileDetails, getTrackedFiles } from '@buf/galtashma_editor.bufbuild_connect-query/editor/server-GitService_connectquery'
-// import type {FileList} from '@buf/galtashma_editor.bufbuild_es/editor/server_pb'
 import { useQuery } from '@tanstack/react-query';
 import { Tree } from './components/Tree';
 import { useMemo, useState } from 'react';
