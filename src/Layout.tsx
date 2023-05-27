@@ -3,6 +3,7 @@ import { getFileDetails, getTrackedFiles } from '@buf/galtashma_editor.bufbuild_
 import { useQuery } from '@tanstack/react-query';
 import { Tree } from './components/Tree';
 import { useMemo, useState } from 'react';
+import { Chat } from './components/Chat';
 
 
 export const Layout = () => {
@@ -21,7 +22,7 @@ export const Layout = () => {
             return "Error";
         }
 
-        return fileDetails.content; //.replaceAll("\n", "<br>")
+        return fileDetails.content;
     }, [isFileLoading, fileError, fileDetails])
 
     return (
@@ -30,8 +31,11 @@ export const Layout = () => {
                 <div className='max-w-[20%] mr-4'>
                     <Tree paths={tarckedFilesResponse?.files || []} onClick={(path: string) => { setSelectedPath(path) }} />
                 </div>
-                <div >
+                <div className='basis-1/2'>
                     <pre><code>{fileContent}</code></pre>
+                </div>
+                <div className='flex-grow bg-gray-100 p-4'>
+                    <Chat />
                 </div>
             </div>
             <div>
